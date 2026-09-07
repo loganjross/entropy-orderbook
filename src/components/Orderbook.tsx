@@ -167,7 +167,7 @@ export function Orderbook(): React.ReactElement {
         )}
       >
         <p>Spread</p>
-        <p className="text-right">{bidAskSpread}</p>
+        <p className="text-right">{bidAskSpread.toFixed(hyperliquid.currentMarket.asset.decimalPrecision)}</p>
         <p className="text-right">
           {(bidAskSpreadPercentage * 100).toFixed(ORDERBOOK_BID_ASK_SPREAD_PERCENTAGE_MAX_DECIMAL_PRECISION)}%
         </p>
