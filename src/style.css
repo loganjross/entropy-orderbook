@@ -1,0 +1,43 @@
+@import "tailwindcss";
+@import "tw-animate-css";
+@import "shadcn/tailwind.css";
+
+:root {
+  /* Color palette */
+  --background: #0d0c0d;
+  --foreground: #ffffff;
+  --muted: #262626;
+  --muted-foreground: #7e7f7e;
+  --card: #171717;
+  --card-foreground: var(--foreground);
+  --primary: #212121;
+  --primary-foreground: var(--foreground);
+  --error: #ef5e74;
+  --success: #40d4ab;
+
+  /* Layout */
+  --spacing: 4px;
+  --font-size: 16px;
+  --radius: 4px;
+}
+
+/* Shadcn */
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --color-muted: var(--muted);
+  --color-muted-foreground: var(--muted-foreground);
+  --color-card: var(--card);
+  --color-card-foreground: var(--card-foreground);
+  --color-popover: var(--card);
+  --color-popover-foreground: var(--card-foreground);
+  --color-primary: var(--primary);
+  --color-primary-foreground: var(--primary-foreground);
+  --color-destructive: var(--error);
+  --color-success: var(--success);
+}
+@layer base {
+  body {
+    @apply bg-background text-foreground;
+  }
+}

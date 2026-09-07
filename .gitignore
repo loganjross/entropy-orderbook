@@ -1,0 +1,20 @@
+# macOS
+.DS_Store
+*.pem
+
+# Environment
+.env
+.env.*
+!*.example
+
+# Dependencies
+node_modules
+
+# Debugging
+logs
+*.log
+npm-debug.log*
+
+# Build
+dist
+*.tsbuildinfo
